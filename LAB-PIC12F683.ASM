@@ -20,14 +20,6 @@ halt0       goto   halt0           ; Sit in endless loop and do nothing.
 
 Start:
 ;===============================================================================
-;BANKSEL GPIO ;
-;CLRF GPIO ;Init GPIO
-;MOVLW 07h ;Set CM<2:0> to digital I/O
-;MOVWF CMCON0 
-;BANKSEL ANSEL ;
-;CLRF ANSEL ;Set to digital I/O
-;MOVLW 00h 
-;MOVWF TRISIO ;Set GP<5:0> as outputs
     
 setports   
 
